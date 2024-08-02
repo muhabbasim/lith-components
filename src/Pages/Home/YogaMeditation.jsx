@@ -5,7 +5,7 @@ import { Row, Col, Container, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Parallax } from "react-scroll-parallax";
 import { m } from "framer-motion"
-import Typed from 'react-typed';
+import {Typed} from 'react-typed';
 import { Link as ScrollTo } from "react-scroll"
 
 // Components

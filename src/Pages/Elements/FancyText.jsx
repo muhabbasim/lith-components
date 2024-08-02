@@ -3,7 +3,7 @@ import React from 'react'
 // Libraries
 import { Col, Container, Row } from 'react-bootstrap'
 import { m } from 'framer-motion'
-import Typed from 'react-typed';
+import {Typed} from 'react-typed';
 import { Link } from 'react-router-dom'
 
 // Components
