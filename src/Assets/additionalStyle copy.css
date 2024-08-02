@@ -1,0 +1,28 @@
+.bgColor {
+  /* background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%); */
+  background-image: linear-gradient(120deg, #34ac65 0%,  #1c5187 100%);
+}
+
+.project_goal {
+  padding: 20px;
+  cursor: pointer;
+  transition: .3s;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.project_goal:hover {
+  background-color: white;
+  padding: 20px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+  transition: .3s;
+  transform: scale(1.1);
+
+}
+
+.project_goal:hover .goal_icon{
+  color: #de7a2c;
+  transition: .3s;
+}
