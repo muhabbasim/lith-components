@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 // Libraries
-import { Col, Container, Navbar, Row, NavDropdown, Nav } from 'react-bootstrap'
+import { Col, Container, Navbar, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, EffectFade, Keyboard, Navigation } from "swiper";
@@ -165,7 +165,7 @@ const ArchitecturePage = (props) => {
           </Col>
           <Col className="w-56 col-auto lg:pr-[15px] md:pr-0 flex gap-6">
             {Languages.map((lang) => (
-              <span style={{ color: currentLang.value === lang.value && "white"}} className={`cursor-pointer`} onClick={() => handleChageLanguage(lang.value)}>{lang.name}</span>
+              <span key={lang.value} style={{ color: currentLang.value === lang.value && "white"}} className={`cursor-pointer`} onClick={() => handleChageLanguage(lang.value)}>{lang.name}</span>
             ))}
           </Col>
           <Col className="col-auto lg:pr-[15px] md:pr-0">
