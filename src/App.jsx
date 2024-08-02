@@ -426,6 +426,7 @@ function App() {
                   <Route path="/home-corporate" element={<CorporatePage style={{ "--base-color": "#2ed47c" }} />} />
                   <Route path="/home-finance" element={<FinancePage style={{ "--base-color": "#8bb867" }} />} />
                   <Route path="/home-application" element={<ApplicationPage style={{ "--base-color": "#502e95" }} />} />
+                  <Route path="/hadaf" element={<ConsultingPage style={{ "--base-color": "#bf8c4c" }} />} />
                   <Route path="/home-consulting" element={<ConsultingPage style={{ "--base-color": "#bf8c4c" }} />} />
                   <Route path="/home-digital-agency" element={<DigitalagencyPage style={{ "--base-color": "#e6994e" }} />} />
                   <Route path="/home-seo-agency" element={<SeoAgencyPage style={{ "--base-color": "#374162" }} />} />
@@ -434,6 +435,7 @@ function App() {
 
                   {/* Home Specialized */}
                   <Route path="/home-restaurant" element={<RestaurantPage />} />
+                  <Route path="/hirat" element={<ArchitecturePage style={{ "--base-color": "#cee002" }} />} />
                   <Route path="/home-architecture" element={<ArchitecturePage style={{ "--base-color": "#cee002" }} />} />
                   <Route path="/home-hotel-resort" element={<HotelResortPage style={{ "--base-color": "#c89965" }} />} />
                   <Route path="/home-travel-agency" element={<TravelAgencyPage style={{ "--base-color": "#ff7a56" }} />} />
