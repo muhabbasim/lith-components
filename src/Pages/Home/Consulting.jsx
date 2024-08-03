@@ -150,9 +150,9 @@ const ConsultingPage = (props) => {
                 <HeaderNav fluid="fluid" theme="dark" expand="lg" className="py-[8px] px-[35px] lg:pr-[35px] md:px-0 md:py-[20px] ">
                     <Col className="col-6 col-lg-2 me-auto ps-lg-0 ps-0 ps-md-3">
                         <Navbar.Brand className="inline-block p-0 m-0">
-                            <img className="default-logo "  style={{ maxHeight: '80px' }} loading="lazy" src={nabihLogo} data-rjs='/assets/img/webp/logo-white@2x.webp' alt='logo' />
-                            <img className="alt-logo"  style={{ maxHeight: '80px' }} loading="lazy" src={nabihLogo} data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
-                            <img className="mobile-logo"  style={{ maxHeight: '80px' }} loading="lazy" src={nabihLogo} data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
+                            <img className="default-logo "  style={{ maxHeight: '80px' }} loading="lazy" src={nabihLogo} alt='logo' />
+                            <img className="alt-logo"  style={{ maxHeight: '80px' }} loading="lazy" src={nabihLogo} alt='logo' />
+                            <img className="mobile-logo"  style={{ maxHeight: '80px' }} loading="lazy" src={nabihLogo} alt='logo' />
                         </Navbar.Brand>
                     </Col>
                     <Navbar.Toggle className="order-last md:mx-[20px] sm:ml-[15px] sm:mr-0">
@@ -170,9 +170,9 @@ const ConsultingPage = (props) => {
                         <SearchBar />
                     </Col>
                         <Navbar.Brand className="inline-block p-0 m-0">
-                            <img className="default-logo "  style={{ maxHeight: '80px' }} loading="lazy" src={hadafLogo} data-rjs='/assets/img/webp/logo-white@2x.webp' alt='logo' />
-                            <img className="alt-logo"  style={{ maxHeight: '80px' }} loading="lazy" src={hadafLogo} data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
-                            <img className="mobile-logo"  style={{ maxHeight: '80px' }} loading="lazy" src={hadafLogo} data-rjs='/assets/img/webp/logo-yellow-ochre@2x.webp' alt='logo' />
+                            <img className="default-logo "  style={{ maxHeight: '80px' }} loading="lazy" src={hadafLogo} alt='logo' />
+                            <img className="alt-logo"  style={{ maxHeight: '80px' }} loading="lazy" src={hadafLogo} alt='logo' />
+                            <img className="mobile-logo"  style={{ maxHeight: '80px' }} loading="lazy" src={hadafLogo} alt='logo' />
                         </Navbar.Brand>
                 </HeaderNav>
             </Header>
