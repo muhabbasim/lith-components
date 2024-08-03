@@ -9,13 +9,14 @@ import * as Yup from 'yup';
 
 // Components
 import Header from "../../Components/Header/Header";
-import CountDown from '../../Components/Countdown/Countdown'
 import { Input } from '../../Components/Form/Form'
 import MessageBox from "../../Components/MessageBox/MessageBox"
 import SocialIcons from "../../Components/SocialIcon/SocialIcons"
-import { fadeIn, fadeInDown, fadeInUp, rotateInDown } from "../../Functions/GlobalAnimations"
-import SideButtons from "../../Components/SideButtons";
+import { fadeInDown, fadeInUp } from "../../Functions/GlobalAnimations"
 import { resetForm, sendEmail } from '../../Functions/Utilities'
+import logo from '../../Assets/logo2.png'
+
+
 
 // Data
 const SocialIconsData = [
@@ -49,11 +50,21 @@ const SocialIconsData = [
 const ComingSoonPage = () => {
   return (
     <>
-      <SideButtons animation={false} />
       <Header topSpace={{ desktop: false }} type="reverse-scroll"></Header>
       <div className="h-[100vh] md:landscape:h-auto flex flex-col">
-        <section className="p-[0px] md:landscape:py-[50px] overflow-hidden bg-[#f5f5f5] flex-1 flex items-center justify-center relative">
+        <section style={{ 
+          backgroundImage: `url(https://plus.unsplash.com/premium_photo-1702498664802-c7a1ad1afcac?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+
+        }} 
+          className="p-[0px] md:landscape:py-[50px] overflow-hidden flex-1 flex items-center justify-center relative"
+        >
           <Row className="justify-center relative z-10">
+          <Col xs={12} className="text-center">
+              <m.h1 {...{ ...fadeInDown, transition: { delay: 1, ease: "easeOut", duration: 0.5 } }} className="inline-block font-serif text-gradient bg-gradient-to-r from-[#b783ff] to-[#ff85a6] font-semibold pb-[10px] xl:text-[50px] xl:leading-none xs:text-[38px]">We are launching soon</m.h1>
+            </Col>
+            
             <Col xs={12} className="mb-[30px] text-center xs:mb-[15px]">
               <Link aria-label="homepage" to="/" className="inline-block">
                 <m.img
@@ -61,68 +72,25 @@ const ComingSoonPage = () => {
                   height="36" width="111"
                   alt="logo"
                   loading="lazy"
-                  src="/assets/img/webp/logo-fast-blue-black-big@2x.webp"
-                  className="w-[142px] xs:w-[100px] inline-block"
+                  src={logo}
+                  className="w-[400px] xs:w-[100px] inline-block"
                 />
               </Link>
             </Col>
-            <Col xs={12} className="text-center">
-              <m.h1 {...{ ...fadeInDown, transition: { delay: 1, ease: "easeOut", duration: 0.5 } }} className="inline-block font-serif text-gradient bg-gradient-to-r from-[#b783ff] to-[#ff85a6] font-semibold pb-[10px] xl:text-[50px] xl:leading-none xs:text-[38px]">We are <br />launching soon</m.h1>
-              <m.p {...{ ...fadeInDown, transition: { delay: 1.7, ease: "easeOut", duration: 0.5 } }} className="text-xmd w-2/5 mx-auto mb-[30px] xl:text-xs xs:w-[90%]">We're currently working hard on this page. Subscribe our newsletter to get update when it'll be live.</m.p>
-            </Col>
-            <Col xs={5}>
+             
+        
+            {/* <Col xs={5}>
               <CountDown
                 theme="countdown-style-01"
                 className="text-darkgray justify-between font-serif font-semibold text-[47px]"
                 date="2023-04-29T15:02:03"
                 animation={{ ...fadeIn, transition: { duration: 0.5, delay: 2 } }}
               />
-            </Col>
+            </Col> */}
           </Row>
 
           {/* Elements */}
-          <div className="h-full w-full min-w-[1500px] absolute bottom-0 left-1/2 -translate-x-1/2">
-            <m.img
-              {...{ ...rotateInDown, transition: { delay: 3.5, ease: "easeOut", duration: 0.5 } }}
-              alt="stick"
-              src="https://via.placeholder.com/207x199"
-              className="absolute top-1/4 left-[20%] max-w-[200px] w-[10%]"
-            />
-            <m.img
-              {...{ ...rotateInDown, transition: { delay: 2.7, ease: "easeOut", duration: 0.5 } }}
-              alt="coffee-cup"
-              src="https://via.placeholder.com/154x156"
-              className="absolute top-1/4 right-[20%]"
-            />
-            <m.img
-              {...{ ...rotateInDown, transition: { delay: 2.5, ease: "easeOut", duration: 0.5 } }}
-              alt="envelope"
-              src="https://via.placeholder.com/234x211"
-              className="absolute top-[calc(25%+100px)] right-[15%]"
-            />
-            <m.img
-              {...{ ...fadeInUp, transition: { delay: 3, ease: "easeOut", duration: 0.5 } }}
-              alt="plant"
-              src="https://via.placeholder.com/293x240"
-              className="absolute bottom-[100px] left-[calc(15%-220px)] max-w-[300px] w-[15%]"
-            />
-            <m.img
-              {...{ ...fadeInUp, transition: { delay: 3, ease: "easeOut", duration: 0.5 } }}
-              alt="alphabate"
-              src="https://via.placeholder.com/400x400"
-              className="absolute bottom-[100px] left-[15%] max-w-[200px] w-[10%]"
-              width="200"
-              height="200"
-            />
-            <m.img
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 2.5, ease: "easeOut" }}
-              alt="brush"
-              src="https://via.placeholder.com/285x286"
-              className="absolute -bottom-[160px] right-[calc(50%-650px)]"
-            />
-          </div>
+   
 
           {/* Big Coming Soon Text */}
           <h2 className="text-white text-shadow-medium text-[150px] leading-none font-serif font-bold absolute -bottom-[60px] left-1/2 -translate-x-1/2 w-max uppercase mb-0 xl:text-[120px] md:bottom-[-50px] xs:text-[50px] xs:-bottom-[15px]">

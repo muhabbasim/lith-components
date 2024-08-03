@@ -664,6 +664,7 @@ function App() {
                   <Route path="/page/pricing-packages" element={<PricingPackagesPage style={{ "--base-color": "#0038e3" }} />} />
                   <Route path="/page/error-404" element={<NotFoundPage style={{ "--base-color": "#0038e3" }} />} />
                   <Route path="/page/maintenance" element={<MaintenancePage />} />
+                  <Route path="/page/kgp" element={<ComingSoonPage />} />
                   <Route path="/page/coming-soon" element={<ComingSoonPage />} />
                   <Route path="/page/coming-soon-V2" element={<ComingSoonV2Page />} />
                   <Route path="/page/faq-s" element={<FaqSPage style={{ "--base-color": "#0038e3" }} />} />
